@@ -129,6 +129,10 @@ footer {
     line-height: 1;
 }
 
+.popup-container {
+    font-family: Pretendard-Regular;
+}
+
 .popup-wrap {
     /* 모든 방향에 0을 주면 화면에 꽉차게 된다. */
     top: 0;
