@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Pretendard-Regular;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-style: normal;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    margin: 0;
+
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    margin-top: 1.5rem;
+
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header h1 {
+    color: #fff;
+    font-family: Pretendard-Regular;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    margin: 0 2.44rem 0 2.44rem;
+
+    align-self: center;
+}
+
+header img {
+    width: 5.875rem;
+    height: 5.875rem;
+}
+
+#basic-img, #basic-hover-img {
+    position: absolute;
+    width: 20.79%;
+
+    top: 19.68vh;
+    left: 16.55vw;
+}
+
+#basic-hover-img {
+    display: none;
+}
+
+#basic:hover img#basic-hover-img {
+    display: block;
+}
+
+#advanced-img, #advanced-hover-img {
+    position: absolute;
+    width: 25.90%;
+
+    top: 7.23vh;
+    right: 16.66vw;
+}
+
+#advanced-hover-img {
+    display: none;
+}
+
+#advanced:hover img#advanced-hover-img {
+    display: block;
+}
+
+#JS-img, #JS-hover-img {
+    position: absolute;
+    width: 35.94%;
+
+    top: 63.12vh;
+    left: 14.33vw;
+}
+
+#JS-hover-img {
+    display: none;
+}
+
+#JS:hover img#JS-hover-img {
+    display: block;
+}
+
+footer {
+    color: #fff;
+
+    margin: 0;
+
+    flex: 1;
+}
+
+#PROTO {
+    position: fixed;
+    left: 1.5rem;
+    bottom: 1.5rem;
+
+    margin: 0;
+
+    font-family: Pretendard-Regular;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+#date {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+
+    margin: 0;
+
+    font-family: Pretendard-Regular;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+.popup-wrap {
+    /* 모든 방향에 0을 주면 화면에 꽉차게 된다. */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 1.5rem;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.popup{
+    width: 100%;
+    max-width: 57.5rem;
+    min-width: 50rem;
+    height: 35rem;
+    color: #fff;
+
+    padding: 1.5rem;
+    border:2px solid;
+    border-image:linear-gradient(0deg, #4e4e4e 0%, #fff 100%);
+    border-image-slice: 1;
+
+    background: rgba(0, 0, 0, 0.80);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+.popup-header{
+    width: 100%;
+
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup-header h2, .pop-btn-close {
+    font-size: 2rem;
+    line-height: 0;
+}
+
+.popup-body{
+    width: 100%;
+    
+    flex-grow: 1;
+}
+
+.body-credit{
+    word-break: break-word;    /* 단어가 짤리지 않음 */
+    min-height: 6.25rem;
+    max-height: 12.5rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.text2, .text3 {
+    margin-left: 3rem;
+}
+
+.popup-body p, .body-credit p {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+
+.popup-footer, .popup-footer-advanced {
+    width: 100%;
+    height: 0.5rem;
+    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.popup-footer button{
+    width: 50%;
+    height: 100%;
+    color:#fff;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+
+    border: 2px solid #fff;
+
+    background: transparent;
+
+    display:inline-flex;    /* 한줄로 나열하기 위한 inline속성과 flex속성 혼합 */
+    justify-content:space-evenly; /* 내용 가운데 정렬 */
+    align-items:center;
+  }
+
+  .popup-footer-advanced button{
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+
+    border: 2px solid #fff;
+
+    background: transparent;
+
+    display:inline-flex;    /* 한줄로 나열하기 위한 inline속성과 flex속성 혼합 */
+    justify-content:space-evenly; /* 내용 가운데 정렬 */
+    align-items:center;
+  }

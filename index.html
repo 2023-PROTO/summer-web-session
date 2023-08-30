@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 PROTO 여름학기 웹 세션</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/패비콘.png"> <!-- 패비콘 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src = "js/modal.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src = "img/웹세션심볼.png">
+        <h1>여름학기 웹 세션</h1>
+        <img src = "img/웹세션심볼.png">
+    </header>
+
+    <div id = "basic">
+        <img src = "img/웹기초세션img.png" id = "basic-img">
+        <button class = "open-basic-modal" style = "border: transparent; background: transparent;">
+            <img src = "img/웹기초세션img_hover.png" id = "basic-hover-img" style = "cursor: pointer">
+        </button>
+    </div>
+
+    <div id = "advanced">
+        <img src = "img/웹심화스터디img.png" id = "advanced-img">
+        <button class = "open-advanced-modal" style = "border: transparent; background: transparent;">
+            <img src = "img/웹심화스터디img_hover.png" id = "advanced-hover-img" style = "cursor: pointer">
+        </button>
+    </div>
+
+    <div id = "JS">
+        <img src = "img/JS워크숍img.png" id = "JS-img">
+        <button class = "open-JS-modal" style = "border: transparent; background: transparent;">
+            <img src = "img/JS워크숍img_hover.png" id = "JS-hover-img" style = "cursor: pointer">
+        </button>
+    </div>
+
+    <footer>
+        <div id = "footer-container">
+            <h2 id = "PROTO">✪ 
+                <span style = "font-style: italic; padding-right: 0.5rem">PROTO</span>
+                ✪</h2>
+            <h2 id = "date">✪
+                <span style = "font-style: italic">2023.07. ~ 2023.08.</span>
+                ✪</h2>
+        </div>
+    </footer>
+
+    <div class = "popup-container">
+        <div class = "popup-wrap" id = "popup-basic">
+
+            <div class = "popup">
+                <div class = "popup-header">
+                    <h2 class = "header-title">웹 기초 세션</h2>
+                    <span class = "pop-btn-close" id="close-basic" style = "cursor: pointer;">✕</span>
+                </div>
+
+                <div class = "popup-body">
+                    <p>웹 기초 세션은 웹 개발에 익숙하지 않은 프밀리를 위한 세션입니다. 참여자들은 두 달간 html/css 기초를 연습했습니다. 배운 내용을 토대로 샘플 웹을 함께 만들어보며, 웹의 와이어프레임 단계부터 구현, 배포까지의 과정을 밀도 있게 다루었습니다.</p>
+
+                    <div class = "body-credit">
+                        <p class = "text1">
+                            <span style = "font-weight: bolder;">진행자</span>
+                            <br>염주원
+                        </p>
+                        <p class = "text2">
+                            <span style = "font-weight: bolder;">참여인원</span>
+                            <br>강유성 김경빈 김세은 신유안 안유진 안재민 윤희서 이지윤
+                            <br>전시은 전지연 조서진 조희원 최유정 최지원 최지현 하유진
+                        </p>
+                    </div>
+                </div>
+
+                <div class = "popup-footer">
+                    <button type = "button" onclick = "location.href = 'https://magic-mirror-710.notion.site/dc528f8011d94d1f9aa9b20c51be72fc'" style = "margin-right: 0.75rem;">웹 기초 세션 커리큘럼 살펴보기</button>
+                    <button type = "button" onclick = "location.href = 'https://hijuwon.github.io/2023-PROTO-Web/'" style = "margin-left: 0.75rem;">결과물 보기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "popup-container">
+        <div class = "popup-wrap" id = "popup-advanced">
+
+            <div class = "popup">
+                <div class = "popup-header">
+                    <h2 class = "header-title">웹 심화 스터디</h2>
+                    <span class = "pop-btn-close" id="close-advanced" style = "cursor: pointer;">✕</span>
+                </div>
+
+                <div class = "popup-body">
+                    <p>웹 심화 스터디는 html/css에 능숙한 프밀리를 위한 스터디입니다. 참여자들은 서로 다른 관심있는 분야를 발전시켜 두 달간 각자의 웹을 만들었습니다.</p>
+
+                    <div class = "body-credit">
+                        <p class = "text1">
+                            <span style = "font-weight: bolder;">진행자</span>
+                            <br>염주원
+                        </p>
+                        <p class = "text2">
+                            <span style = "font-weight: bolder;">참여인원</span>
+                            <br>김나언, 배은환, 염유미, 유민서
+                        </p>
+                    </div>
+                </div>
+
+                <h2>스터디 결과물</h2>
+                <div class = "popup-footer-advanced">
+                    <button type = "button" onclick = "location.href = 'https://heumumi.github.io/customvendingmachine/'" style = "margin-right: 0.75rem;">A custom vending machine (염유미)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "popup-container">
+        <div class = "popup-wrap" id = "popup-JS">
+
+            <div class = "popup">
+                <div class = "popup-header">
+                    <h2 class = "header-title">자바스크립트 워크숍</h2>
+                    <span class = "pop-btn-close" id="close-JS" style = "cursor: pointer;">✕</span>
+                </div>
+
+                <div class = "popup-body">
+                    <p>여름학기 웹 세션 참여자 전체가 모여 자바스크립트 기초를 배우는 시간을 가졌습니다.</p>
+
+                    <div class = "body-credit">
+                        <p class = "text1">
+                            <span style = "font-weight: bolder;">진행자</span>
+                            <br>유민서
+                        </p>
+                        <p class = "text2">
+                            <span style = "font-weight: bolder;">참여인원</span>
+                            <br>웹 세션 참여자 전체
+                        </p>
+                        <p class = "text3">
+                            <span style = "font-weight: bolder;">다룬 내용</span>
+                            <br>브라우저의 작동 원리
+                            <br>JS 기초(문법/자료형/연산자)
+                            <br>객체&함수
+                            <br>이벤트와 상호작용
+                            <br>인터랙티브 웹 제작 실습
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+</body>
+</html>
